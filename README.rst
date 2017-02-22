@@ -110,3 +110,4 @@ License
 
 The plugin code is assumed to be under the AGPLv3 license (this is the
 license of the Pelican-Plugins repo).
+
