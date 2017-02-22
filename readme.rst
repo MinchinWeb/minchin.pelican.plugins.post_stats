@@ -1,13 +1,69 @@
+===============
 Post Statistics
-==================
+===============
 
-A Pelican plugin to calculate various statistics about a post and store them in an article.stats dictionary:
+``Post Stats`` is a plugin for `Pelican <http://docs.getpelican.com/>`_,
+a static site generator written in Python.
+
+``Post Stats`` calculates various statistics about a post and store them in
+an article.stats dictionary:
 
 - ``wc``: how many words
-- ``read_mins``: how many minutes would it take to read this article, based on 250 wpm (http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension)
-- ``word_counts``: frquency count of all the words in the article; can be used for tag/word clouds
-- ``fi``: Flesch-kincaid Index/ Reading Ease (see: http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests)
+- ``read_mins``: how many minutes would it take to read this article, based
+   on 250 wpm
+   (`source <http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension>`_)
+- ``word_counts``: frquency count of all the words in the article; can be
+  used for tag/word clouds
+- ``fi``: Flesch-kincaid Index/ Reading Ease
+  (`more info <http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests>`_)
 - ``fk``: Flesch-kincaid Grade Level
+
+
+Installation
+============
+
+The easiest way to install ``Post Stats`` is through the use of pip. This
+will also install the required dependencies automatically.
+
+.. code-block:: sh
+
+  pip install minchin.pelican.plugins.post_stats
+
+Then, in your ``pelicanconf.py`` file, add ``Post Stats`` to your list of
+plugins:
+
+.. code-block:: python
+
+  PLUGINS = [
+              # ...
+              'minchin.pelican.plugins.post_stats',
+              # ...
+            ]
+
+You may also need to configure your template to make use of the statistics
+generated.
+
+
+Requirements
+============
+
+``Post Stats`` depends on (and is really only useful with) Pelican. The
+plugin also requries Beautiful Soup 4 to process your content. If the plugin
+is installed from pip, these will automatically be installed. These can also
+be manually installed with pip:
+
+.. code-block:: sh
+
+   pip install pelican
+   pip install beautifulsoup4
+
+
+
+Configuration and Usage
+=======================
+
+This plugin calculates various statistics about a post and store them in
+an article.stats dictionary.
 
 Example:
 
@@ -39,11 +95,18 @@ The ``word_counts`` variable is a python ``Counter`` dictionary and looks someth
 
 and can be used to create a tag/word cloud for a post.
 
-Requirements
-----------------
+There are not user-configurable settings.
 
-`post_stats` requires BeautifulSoup.
 
-.. code-block:: console
+Credits
+=======
 
-    $ pip install beautifulsoup4
+Original plugin from the `Pelican-Plugins repo
+<https://github.com/getpelican/pelican-plugins>`_.
+
+
+License
+=======
+
+The plugin code is assumed to be under the AGPLv3 license (this is the
+license of the Pelican-Plugins repo).
