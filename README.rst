@@ -10,8 +10,8 @@ an article.stats dictionary:
 
 - ``wc``: how many words
 - ``read_mins``: how many minutes would it take to read this article, based
-   on 250 wpm
-   (`source <http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension>`_)
+  on 250 wpm
+  (`source <http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension>`_)
 - ``word_counts``: frquency count of all the words in the article; can be
   used for tag/word clouds
 - ``fi``: Flesch-kincaid Index/ Reading Ease
@@ -77,7 +77,8 @@ Example:
         'read_mins': 12
     }
 
-This allows you to output these values in your templates, like this, for example:
+This allows you to output these values in your templates, like this, for
+example:
 
 .. code-block:: html+jinja
 
@@ -87,7 +88,8 @@ This allows you to output these values in your templates, like this, for example
 	    <li>Flesch-kincaid Grade Level: {{ article.stats['fk'] }}</li>
 	</ul>
 
-The ``word_counts`` variable is a python ``Counter`` dictionary and looks something like this, with each unique word and it's frequency:
+The ``word_counts`` variable is a python ``Counter`` dictionary and looks
+something like this, with each unique word and it's frequency:
 
 .. code-block:: python
 
@@ -95,13 +97,15 @@ The ``word_counts`` variable is a python ``Counter`` dictionary and looks someth
 
 and can be used to create a tag/word cloud for a post.
 
-There are not user-configurable settings.
+There are no user-configurable settings.
 
 
 Credits
 =======
 
-Original plugin from the `Pelican-Plugins repo
+`Original plugin <http://duncanlock.net/blog/2013/06/23/post-statistics-plugin-for-pelican/>`_
+by Duncan Lock (`@dflock <https://github.com/dflock>`_) and
+posted to the `Pelican-Plugins repo
 <https://github.com/getpelican/pelican-plugins>`_.
 
 
