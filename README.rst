@@ -23,6 +23,10 @@ an article.stats dictionary:
     :target: https://pypi.python.org/pypi/minchin.pelican.plugins.post-stats/
     :alt: PyPI version number
 
+.. image:: https://img.shields.io/badge/-Changelog-success
+   :target: https://github.com/MinchinWeb/minchin.pelican.plugins.post_stats/blob/master/CHANGELOG.rst
+   :alt: Changelog
+
 .. image:: https://img.shields.io/pypi/pyversions/minchin.pelican.plugins.post-stats?style=flat
     :target: https://pypi.python.org/pypi/minchin.pelican.plugins.post-stats/
     :alt: Supported Python version
