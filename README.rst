@@ -14,9 +14,26 @@ an article.stats dictionary:
   (`source <http://en.wikipedia.org/wiki/Words_per_minute#Reading_and_comprehension>`_)
 - ``word_counts``: frquency count of all the words in the article; can be
   used for tag/word clouds
-- ``fi``: Flesch-kincaid Index/ Reading Ease
+- ``fi``: Flesch-Kincaid Index/Reading Ease
   (`more info <http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests>`_)
-- ``fk``: Flesch-kincaid Grade Level
+- ``fk``: Flesch-Kincaid Grade Level
+
+
+.. image:: https://img.shields.io/pypi/v/minchin.pelican.plugins.post-stats.svg?style=flat
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.post-stats/
+    :alt: PyPI version number
+
+.. image:: https://img.shields.io/pypi/pyversions/minchin.pelican.plugins.post-stats?style=flat
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.post-stats/
+    :alt: Supported Python version
+
+.. image:: https://img.shields.io/pypi/l/minchin.pelican.plugins.post-stats.svg?style=flat&color=green
+    :target: https://github.com/MinchinWeb/minchin.pelican.plugins.post_stats/blob/master/LICENSE.txt
+    :alt: License
+
+.. image:: https://img.shields.io/pypi/dm/minchin.pelican.plugins.post-stats.svg?style=flat
+    :target: https://pypi.python.org/pypi/minchin.pelican.plugins.post-stats/
+    :alt: Download Count
 
 
 Installation
