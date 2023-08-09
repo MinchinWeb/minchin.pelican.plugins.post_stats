@@ -13,10 +13,11 @@ fk: Flesch-kincaid Grade Level
 
 """
 
-import re
 from collections import Counter
+import re
 
 from bs4 import BeautifulSoup
+
 from pelican import signals
 
 from .readability import flesch_index, flesch_kincaid_level, text_stats
