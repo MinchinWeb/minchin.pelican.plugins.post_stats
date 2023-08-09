@@ -50,16 +50,8 @@ will also install the required dependencies automatically.
 
   pip install minchin.pelican.plugins.post_stats
 
-Then, in your ``pelicanconf.py`` file, add ``Post Stats`` to your list of
-plugins:
-
-.. code-block:: python
-
-  PLUGINS = [
-              # ...
-              'minchin.pelican.plugins.post_stats',
-              # ...
-            ]
+On Pelican versions 4.5 and later, the plugin will automatically activate
+itself!
 
 You may also need to configure your template to make use of the statistics
 generated.

@@ -3,6 +3,8 @@ Image Process Changelog
 
 This Changelog is for ``minchin.pelican.plugins.post_stats``.
 
+- :feature:`-` auto-activate the plugin using
+  ``minchin.pelican.plugins.autoloader``.
 - :release:`1.1.1 <2017-04-18>`
 - :bug:`-` add Pelican trove classifier
 - :release:`1.1.0 <2017-02-22>`
