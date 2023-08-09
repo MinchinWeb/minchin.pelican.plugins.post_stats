@@ -2,7 +2,7 @@
 
 # Module Metadata
 __title__ = "minchin.pelican.plugins.post_stats"
-__version__ = "1.2.0"
+__version__ = "1.2.1-dev"
 __description__ = "This Pelcan plugin calculates various statistics about a post and stores them in an article.stats dictionary."
 __author__ = "William Minchin"
 __email__ = "w_minchin@hotmail.com"
