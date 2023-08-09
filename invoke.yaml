@@ -12,5 +12,8 @@ releaser:
     test:
       - pelican
       - beautifulsoup4
+      - semantic-version
+      - setuptools
+      - wheel
     pypi:
-      - python-dateutil
+      # - python-dateutil

@@ -3,6 +3,7 @@ Image Process Changelog
 
 This Changelog is for ``minchin.pelican.plugins.post_stats``.
 
+- :release:`1.2.0 <2023-08-09>`
 - :feature:`-` auto-activate the plugin using
   ``minchin.pelican.plugins.autoloader``.
 - :release:`1.1.1 <2017-04-18>`
